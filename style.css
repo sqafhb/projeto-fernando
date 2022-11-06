@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+html {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+} 
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color:#fff;
+    list-style: none;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1920px;
+    width: 100%;
+}
+
+/* HEADER */
+
+header {
+    position: relative;
+    top: 0;
+    height: auto;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* NAVEGAÇÃO */
+
+nav {
+    position: relative;
+    top: 0;
+    height: 100px;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1;
+    border-bottom: 1px solid #ccc;
+}
+
+nav:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.nav-container {
+    max-width: 1200px;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#logo {
+    width: 120px;
+    margin-top: 25px;
+
+}
+
+.nav-container ul {
+    float: right;
+    height: 100px;
+    line-height: 100px;
+    margin: 0;
+}
+
+.nav-container li {
+    list-style: none;
+    float: left;
+    margin: 0 15px;
+}
+
+.nav-container li a {
+    text-decoration: none;
+    color: #000;
+    transition: .5s;
+}
+
+.nav-container li a:hover {
+    color: rgb(97, 173, 239);
+}
+
+#banner {
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+}
+
+.home {
+    height: 50vh;
+    border: 1px solid black;
+}
+
+.menu {
+    margin: 30px 60px;
+    padding: 1px 40px;
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.image-me {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 30px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.description-about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #000;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+
+
+.wrapper {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+#testmony-container {
+    margin-top: 20px;
+    padding: 10px;
+
+}
+
+#testmony-container h2, #testmony-container p {
+    color: #ccc;
+    text-align: center;
+
+}
+
+
+#testmony-container h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+
+}
+
+#testmony-container p {
+
+    margin-bottom: 50px;
+
+}
+
+.testmony-box {
+    display: inline-block;
+    width: 24%;
+    text-align: center;
+}
+
+#testmony-container .testmony-box .testmony-msg {
+
+    background-color:rgb(97, 173, 239);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 20px;
+    width: 50%;
+    position: relative;
+    margin: 35px auto;
+    font-style: italic;
+
+}
+
+.testmony-msg:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid rgb(97, 173, 239);
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.testmony-box img {
+    width: 100px;
+    height: 100px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50%;
+}
+
+.testmony-name {
+    font-weight: bold;
+}
+
+.fale-comigo {
+    display: block;
+    width: 100%;
+}
+
+p {
+    font-size: 15px;
+    padding: 20px;
+}
+
+a {
+    color: rgb(97, 173, 239);
+}
+
+form {
+    color:  rgb(0, 0, 0);
+    background-color: transparent;
+    border-color: #fff;
+    border-width: 0.5px;
+    border-style: solid;
+    border-radius: 0;
+    width: 40%;
+    max-width: 40%;
+    font-size: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0 1px 1px  #fff inset;
+}
+
+#mesage-contact {
+    width: 95%;
+    height: 150px;
+}
+
+/* FOOTER */
+
+footer {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+    padding-top: 2em;
+    padding-bottom: 40px;
+    border-top: 5px solid #F9A9FD;
+    margin-top: 25px;
+}
+
+footer h2, footer p, footer a, footer span {
+    color: #D1D1D1;
+
+}
+
+footer h2 {
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer ul {
+    padding: 0;
+
+}
+
+footer li {
+    list-style: none;
+}
+
+.footer-box {
+    width: 31%;
+    padding: 1%;
+    float: left;
+}
+
+footer .wrapper:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.company-footer {
+    width: 80%;
+}
+
+.company-footer h2 {
+    margin-top: 20px;
+}
+
+.company-footer h2, .company-footer p {
+    margin-bottom: 20px;
+}
+
+.footer-list li {
+    margin-bottom: 5px;
+}
+
+.footer-list a {
+    transition: .5s;
+    list-style: none;
+    float: left;
+    margin: 0 5px;
+}
+
+.footer-list a:hover {
+    color: rgb(97, 173, 239);
+}
+
+.footer-list li:after {
+    clear: none;
+    align-items: center;
+}
+
+#footer-logo {
+    width: 60px;
+    margin-left: 10px;
+}
+
+.articles-footer {
+    width: 80%;
+}
+
+.footer-list.footer-article-list span {
+    display: block;
+    float: none;
+}
+
+.fab {
+    font-size: 30px;
+    float: left;
+}
+
+.footer-list li span {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #fff;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 10px;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+
+    #logo {
+        width: 120px;
+        margin: 25px 0 0 45px;
+    
+    }
+
+
+    #banner {
+        background-position: 50% 50%;
+        background-size: cover;
+        width: 100%;
+        height: 450px;
+    }
+
+    .menu {
+        font-size: 50px;
+        
+    }
+
+
+    .testmony-box {
+        display: table-row;
+        text-align: center;
+    }
+
+    #testmony-container .testmony-box .testmony-msg {
+
+        background-color:rgb(97, 173, 239);
+        color: rgb(0, 0, 0);
+        border-radius: 10px;
+        padding: 30px;
+        width: 60%;
+        position: relative;
+        margin: 35px auto;
+        font-style: italic;
+    
+    }
+
+    .fale-comigo {
+        display: block;
+        font-size: 40px;
+        align-content: center;
+    }
+
+    p {
+        font-size: 25px;
+        padding: 20px;
+    }
+
+    footer {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 8px;
+        background-color: #fff;
+        padding-top: 1em;
+        padding-bottom: 40px;
+        border-top: 1px solid #F9A9FD;
+        margin-top: 20px;
+    }
+
+    #footer-logo {
+        width: 60px;
+        margin-left: 10px;
+    }
+
+    .footer-box {
+        width: 40%;
+        padding: 1%;
+        float: left;
+    }
+
